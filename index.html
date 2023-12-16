@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contextle Game</title>
 </head>
 <body>
-    <div id="app"></div>
-    <script src="dist/app.js"></script>
+    <header>
+        <h1>Contextle Game</h1>
+        <p id="prompt">Writers of Fairytales + A purple McDonald's character</p>
+    </header>
+    <main>
+        <label for="userResponse">Your Response:</label>
+        <input type="text" id="userResponse" />
+        <button onclick="submitResponse()">Submit</button>
+    </main>
+    <script type="module" src="node_modules/natural/lib/natural/index.js"></script>
+    <script type="module" src="dist/app.js"></script>
 </body>
 </html>
